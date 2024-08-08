@@ -1,4 +1,4 @@
-// src/features/users/usersSlice.js
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -28,7 +28,7 @@ export const fetchUsers = createAsyncThunk(
       ...filters,
     };
     const response = await axios.get('https://dummyjson.com/users', { params });
-    // Ensure each user has necessary properties
+    
     const users = response.data.users.map(user => ({
       ...user,
       job: user.job || { title: 'N/A' },

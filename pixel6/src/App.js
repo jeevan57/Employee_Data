@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from "react";
 import UserList from "./features/users/UserList";
 import SortAndFilter from "./features/users/SortAndFilter";
